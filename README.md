@@ -35,5 +35,5 @@ $ nix profile install sourcehut:~renerocksai/mdmail
 Then run it:
 
 ```console
-$ mdmail mymail.txt
+$ mdmail mymail.md
 ```
