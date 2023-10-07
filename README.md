@@ -1,24 +1,22 @@
 # mdmail
 
-OK, so I have this use-case where I write mails in neovim, using markdown syntax. I am just much
-quicker, I have my telekasten.nvim markdown notes in there, etc.
+I use neovim to write emails in markdown syntax, which I find faster and more
+efficient. However, I need a way to convert these markdown emails into HTML
+that's compatible with Outlook.com's browser version. The standard pandoc
+conversion doesn't work well for me due to poor styling and lack of embedded
+images. 
 
-So I need a way to convert these markdown mails to HTML in a way that works with
-Outlook.com in the browser. A simple pandoc conversion does not cut it:
-
-- the styling is awful with the default template
-- images are not embedded by default
-
-**mdmail** fixes that for me.
-
-I just run `mdmail mail.md` and a beautiful mail with all images and screenshots
-embedded will open in my browser. There, I can ctrl+a select all, copy, and
-paste it into outlook in the browser.
+To solve this, I use **mdmail**. By simply running `mdmail mail.md`, it
+generates a well-styled email with all images and screenshots embedded, which
+opens in my browser. I can then select all, copy, and paste it into Outlook in
+the browser.
 
 Ta-dah! 😊
 
 
 ## Run without installing
+
+Use nix, with flakes enabled.
 
 ```console
 $ nix run sourcehut:~renerocksai/mdmail mymail.md
