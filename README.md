@@ -17,3 +17,23 @@ paste it into outlook in the browser.
 
 Ta-dah! 😊
 
+
+## Run without installing
+
+```console
+$ nix run sourcehut:~renerocksai/mdmail mymail.md
+```
+
+## Installing it
+
+Use nix, with flakes enabled.
+
+```console
+$ nix profile install sourcehut:~renerocksai/mdmail
+```
+
+Then run it:
+
+```console
+$ mdmail mymail.txt
+```
