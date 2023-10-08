@@ -72,7 +72,7 @@
             fi
 
             md="\$1"
-            html="/tmp/\$1.html"
+            html="/tmp/\$(basename \$1.html)"
             ${pkgs.pandoc.out}/bin/pandoc --embed-resources --css=$out/mail.css --template=$out/mail.template -f markdown -t html \$md -o \$html
             ${pkgs.xdg-utils.out}/bin/xdg-open \$html
             EOF
