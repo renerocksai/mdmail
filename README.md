@@ -36,5 +36,7 @@ Then run it:
 $ mdmail mymail.md
 ```
 
-Or in vim: `:!mdmail %` 😎
+Or in vim: `:!mdmail %`
+
+😎
 
