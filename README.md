@@ -35,3 +35,6 @@ Then run it:
 ```console
 $ mdmail mymail.md
 ```
+
+Or in vim: `:!mdmail %` 😎
+
