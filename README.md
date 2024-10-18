@@ -19,7 +19,7 @@ Ta-dah! 😊
 Use nix, with flakes enabled.
 
 ```console
-$ nix run sourcehut:~renerocksai/mdmail mymail.md
+$ nix run github:renerocksai/mdmail mymail.md
 ```
 
 ## Installing it
@@ -27,7 +27,7 @@ $ nix run sourcehut:~renerocksai/mdmail mymail.md
 Use nix, with flakes enabled.
 
 ```console
-$ nix profile install sourcehut:~renerocksai/mdmail
+$ nix profile install github:renerocksai/mdmail
 ```
 
 Then run it:
